@@ -1,8 +1,7 @@
 function volume_sphere() {
     //Write your code here
 
-	function volume_sphere() {
-    // Retrieve the radius value from the input field
+// Retrieve the radius value from the input field
     var radiusInput = document.getElementById('radius').value;
 
     // Convert the radius value to a number
@@ -10,7 +9,7 @@ function volume_sphere() {
 
     // Validate the input
     if (isNaN(radius) || radius < 0) {
-        alert('Please enter a valid non-negative number for the radius.');
+        // alert('Please enter a valid non-negative number for the radius.');
         return;
     }
 
@@ -26,9 +25,6 @@ function volume_sphere() {
 document.getElementById('MyForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting the traditional way
     volume_sphere(); // Call the function to perform the calculation
-});
-
-  
-} 
+}); 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
