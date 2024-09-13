@@ -1,7 +1,7 @@
 function volume_sphere() {
     //Write your code here
 
-// Retrieve the radius value from the input field
+    // Retrieve the radius value from the input field
     var radiusInput = document.getElementById('radius').value;
 
     // Convert the radius value to a number
@@ -9,7 +9,9 @@ function volume_sphere() {
 
     // Validate the input
     if (isNaN(radius) || radius < 0) {
-        // alert('Please enter a valid non-negative number for the radius.');
+        // Set volumeField to 'NaN' and return
+        var volumeField = document.getElementById('volume');
+        volumeField.value = 'NaN';
         return;
     }
 
